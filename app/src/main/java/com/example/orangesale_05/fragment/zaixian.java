@@ -11,7 +11,7 @@ import androidx.annotation.Nullable;
 
 import com.example.orangesale_05.R;
 
-public class ShoppingCartFragment extends Fragment {
+public class zaixian extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

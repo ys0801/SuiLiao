@@ -20,7 +20,7 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-public class IndexFragment extends Fragment implements View.OnClickListener {
+public class xiaoxi extends Fragment implements View.OnClickListener {
     private SearchView searchView;
     private LinearLayout orangeLine, youziLine, juziLine, xiguaLine, liLine, appleLine, lemonLine, mangguoLine;
     private GridView gridView;

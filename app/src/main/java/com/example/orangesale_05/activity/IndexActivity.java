@@ -10,15 +10,15 @@ import android.widget.LinearLayout;
 import androidx.annotation.Nullable;
 
 import com.example.orangesale_05.R;
-import com.example.orangesale_05.fragment.IndexFragment;
+import com.example.orangesale_05.fragment.xiaoxi;
 import com.example.orangesale_05.fragment.PearsonFragment;
-import com.example.orangesale_05.fragment.ProductFragment;
-import com.example.orangesale_05.fragment.ShoppingCartFragment;
+import com.example.orangesale_05.fragment.wenjian;
+import com.example.orangesale_05.fragment.zaixian;
 
 public class IndexActivity extends Activity implements View.OnClickListener {
-    private IndexFragment indexFragment;
-    private ProductFragment productFragment;
-    private ShoppingCartFragment shoppingCartFragment;
+    private xiaoxi xiaoxi;
+    private wenjian wenjian;
+    private zaixian zaixian;
     private PearsonFragment pearsonFragment;
     private LinearLayout indexLine, productLine, shoppingCartLine, pearsonLine;
 
@@ -68,10 +68,10 @@ public class IndexActivity extends Activity implements View.OnClickListener {
     private void initIndexFragment() {
         //开启事务，fragment的控制是由事务来实现的
         FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        if (indexFragment == null) {
-            indexFragment = new IndexFragment();
+        if (xiaoxi == null) {
+            xiaoxi = new xiaoxi();
         }
-        transaction.replace(R.id.main_content, indexFragment);
+        transaction.replace(R.id.main_content, xiaoxi);
         transaction.commit();
     }
 
@@ -81,10 +81,10 @@ public class IndexActivity extends Activity implements View.OnClickListener {
     private void initproductFragment() {
         //开启事务，fragment的控制是由事务来实现的
         FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        if (productFragment == null) {
-            productFragment = new ProductFragment();
+        if (wenjian == null) {
+            wenjian = new wenjian();
         }
-        transaction.replace(R.id.main_content, productFragment);
+        transaction.replace(R.id.main_content, wenjian);
         transaction.commit();
     }
 
@@ -94,10 +94,10 @@ public class IndexActivity extends Activity implements View.OnClickListener {
     private void initshoppingCartFragment() {
         //开启事务，fragment的控制是由事务来实现的
         FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        if (shoppingCartFragment == null) {
-            shoppingCartFragment = new ShoppingCartFragment();
+        if (zaixian == null) {
+            zaixian = new zaixian();
         }
-        transaction.replace(R.id.main_content, shoppingCartFragment);
+        transaction.replace(R.id.main_content, zaixian);
         transaction.commit();
     }
 

@@ -2,6 +2,7 @@ package com.example.orangesale_05.fragment;
 
 import android.app.Fragment;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +15,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.example.orangesale_05.R;
 import com.example.orangesale_05.activity.EditInfoActivity;  // 这是你新建的编辑信息的Activity
 
@@ -79,6 +82,11 @@ public class PearsonFragment extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         Intent intent;
         switch (v.getId()) {
+            case R.id.user_icon:
+                // 启动图库选择图片
+                Intent pickPhoto = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                startActivityForResult(pickPhoto, 0);
+                break;
             case R.id.user_username_line:
                 intent = new Intent(getActivity(), EditInfoActivity.class);
                 intent.putExtra("info_type", "username");
@@ -104,18 +112,33 @@ public class PearsonFragment extends Fragment implements View.OnClickListener {
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == getActivity().RESULT_OK && data != null) {
-            String updatedInfo = data.getStringExtra("updated_info");
             switch (requestCode) {
+                case 0: // 处理头像更新
+                    try {
+                        Uri selectedImage = data.getData();
+                        // 使用 Glide 加载圆形图像
+                        Glide.with(this)
+                                .load(selectedImage)
+                                .apply(RequestOptions.circleCropTransform()) // 设置圆形裁剪
+                                .into(userIconImage);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                    break;
                 case REQUEST_CODE_EDIT_USERNAME:
-                    usernameText.setText(String.format("用户名：%s", updatedInfo));
+                    String updatedUsername = data.getStringExtra("updated_info");
+                    usernameText.setText(String.format("用户名：%s", updatedUsername));
                     break;
                 case REQUEST_CODE_EDIT_SEX:
-                    userSexText.setText(String.format("性别：%s", updatedInfo));
+                    String updatedSex = data.getStringExtra("updated_info");
+                    userSexText.setText(String.format("性别：%s", updatedSex));
                     break;
                 case REQUEST_CODE_EDIT_CITY:
-                    userCityText.setText(String.format("城市：%s", updatedInfo));
+                    String updatedCity = data.getStringExtra("updated_info");
+                    userCityText.setText(String.format("城市：%s", updatedCity));
                     break;
             }
         }
     }
+
 }
