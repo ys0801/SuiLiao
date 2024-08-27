@@ -1,6 +1,6 @@
 package com.example.orangesale_05.entity;
 
-public class OrangeUser {
+public class User {
     private Integer id;
     private String username;
     private String password;

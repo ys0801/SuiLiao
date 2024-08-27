@@ -16,11 +16,9 @@ import com.example.orangesale_05.R;
 import com.example.orangesale_05.adapter.ProductAdapter;
 import com.example.orangesale_05.entity.Product;
 
-import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.List;
 
-public class xiaoxi extends Fragment implements View.OnClickListener {
+public class Message extends Fragment implements View.OnClickListener {
     private SearchView searchView;
     private LinearLayout orangeLine, youziLine, juziLine, xiguaLine, liLine, appleLine, lemonLine, mangguoLine;
     private GridView gridView;
@@ -30,7 +28,7 @@ public class xiaoxi extends Fragment implements View.OnClickListener {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = LayoutInflater.from(getActivity()).inflate(R.layout.xiaoxi, container, false);
+        View view = LayoutInflater.from(getActivity()).inflate(R.layout.index_message, container, false);
         init(view);
         return view;
     }
@@ -49,7 +47,7 @@ public class xiaoxi extends Fragment implements View.OnClickListener {
     }
 
     /**
-     * 初始化商品数据
+     * 初始化数据
      */
     private void initData() {
 

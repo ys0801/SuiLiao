@@ -11,11 +11,11 @@ import androidx.annotation.Nullable;
 
 import com.example.orangesale_05.R;
 
-public class zaixian extends Fragment {
+public class Document extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = LayoutInflater.from(getActivity()).inflate(R.layout.zaixian, container, false);
+        View view = LayoutInflater.from(getActivity()).inflate(R.layout.document, container, false);
         return view;
     }
 }

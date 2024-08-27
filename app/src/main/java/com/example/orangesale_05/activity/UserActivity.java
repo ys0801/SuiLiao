@@ -37,7 +37,6 @@ public class UserActivity extends Activity implements View.OnClickListener {
         userCityLine = findViewById(R.id.user_city_line);
         userSettingLine = findViewById(R.id.user_setting);
         userGeneralLine = findViewById(R.id.user_general);
-        userSearchProductLine = findViewById(R.id.user_searchProduct);
         userSearchProductLine.setOnClickListener(this);
         setData();
     }
@@ -54,12 +53,7 @@ public class UserActivity extends Activity implements View.OnClickListener {
     }
 
     @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.user_searchProduct:
-                Intent intent1 = new Intent(UserActivity.this, CategoryActivity.class);
-                startActivity(intent1);
-                break;
-        }
+    public void onClick(View view) {
+
     }
 }
