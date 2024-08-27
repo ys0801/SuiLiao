@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name='OrangeSale_05'
+rootProject.name='Chat'

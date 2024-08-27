@@ -1,4 +1,4 @@
-package com.example.orangesale_05.activity;
+package com.example.Chat.activity;
 
 import android.content.Intent;
 import android.database.Cursor;
@@ -11,8 +11,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.orangesale_05.R;
-import com.example.orangesale_05.dataoperation.Database;
+import com.example.Chat.R;
+import com.example.Chat.dataoperation.Database;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     private Button registerButton, loginButton;

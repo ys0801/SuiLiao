@@ -1,4 +1,4 @@
-package com.example.orangesale_05.entity;
+package com.example.Chat.entity;
 
 public class User {
     private Integer id;

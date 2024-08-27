@@ -1,4 +1,4 @@
-package com.example.orangesale_05.fragment;
+package com.example.Chat.fragment;
 
 import android.annotation.SuppressLint;
 import android.app.Fragment;
@@ -13,8 +13,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.example.orangesale_05.R;
-import com.example.orangesale_05.activity.CategoryActivity;
+import com.example.Chat.R;
+import com.example.Chat.activity.CategoryActivity;
 
 import java.util.Objects;
 

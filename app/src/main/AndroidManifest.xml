@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.orangesale_05" >
+    package="Chat" >
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
@@ -12,19 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".activity.EditInfoActivity"
+            android:name="com.example.Chat.activity.EditInfoActivity"
             android:exported="false" />
-        <activity android:name=".activity.LoginActivity" >
+        <activity android:name="com.example.Chat.activity.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.RegisterActivity" />
-        <activity android:name=".activity.UserActivity" />
-        <activity android:name=".activity.CategoryActivity" />
-        <activity android:name=".activity.IndexActivity" />
+        <activity android:name="com.example.Chat.activity.RegisterActivity" />
+        <activity android:name="com.example.Chat.activity.UserActivity" />
+        <activity android:name="com.example.Chat.activity.CategoryActivity" />
+        <activity android:name="com.example.Chat.activity.IndexActivity" />
     </application>
 
 </manifest>

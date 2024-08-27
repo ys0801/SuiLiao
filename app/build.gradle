@@ -5,7 +5,7 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
     defaultConfig {
-        applicationId "com.example.orangesale_05"
+        applicationId "com.example.Chat"
         minSdkVersion 23
         targetSdkVersion 30
         versionCode 1

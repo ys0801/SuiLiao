@@ -1,4 +1,4 @@
-package com.example.orangesale_05.adapter;
+package com.example.Chat.adapter;
 
 import android.content.Context;
 import android.util.Log;
@@ -9,8 +9,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.orangesale_05.R;
-import com.example.orangesale_05.entity.Product;
+import com.example.Chat.R;
+import com.example.Chat.entity.Product;
 
 import java.util.List;
 

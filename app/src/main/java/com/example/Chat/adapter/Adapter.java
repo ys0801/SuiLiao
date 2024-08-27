@@ -1,4 +1,4 @@
-package com.example.orangesale_05.adapter;
+package com.example.Chat.adapter;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.example.orangesale_05.R;
+import com.example.Chat.R;
 
 import java.util.List;
 
