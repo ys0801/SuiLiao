@@ -1,4 +1,4 @@
-package com.example.orangesale_05.fragment;
+package com.example.Chat.fragment;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -12,9 +12,9 @@ import android.widget.SearchView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.example.orangesale_05.R;
-import com.example.orangesale_05.adapter.ProductAdapter;
-import com.example.orangesale_05.entity.Product;
+import com.example.Chat.R;
+import com.example.Chat.adapter.ProductAdapter;
+import com.example.Chat.entity.Product;
 
 import java.util.List;
 

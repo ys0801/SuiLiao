@@ -1,4 +1,4 @@
-package com.example.orangesale_05.entity;
+package com.example.Chat.entity;
 
 import java.math.BigDecimal;
 

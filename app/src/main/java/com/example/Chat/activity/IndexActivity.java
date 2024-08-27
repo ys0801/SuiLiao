@@ -1,4 +1,4 @@
-package com.example.orangesale_05.activity;
+package com.example.Chat.activity;
 
 import android.app.Activity;
 import android.app.FragmentTransaction;
@@ -9,11 +9,11 @@ import android.widget.LinearLayout;
 
 import androidx.annotation.Nullable;
 
-import com.example.orangesale_05.R;
-import com.example.orangesale_05.fragment.Contact;
-import com.example.orangesale_05.fragment.Document;
-import com.example.orangesale_05.fragment.Message;
-import com.example.orangesale_05.fragment.PearsonFragment;
+import com.example.Chat.R;
+import com.example.Chat.fragment.Contact;
+import com.example.Chat.fragment.Document;
+import com.example.Chat.fragment.Message;
+import com.example.Chat.fragment.PearsonFragment;
 
 public class IndexActivity extends Activity implements View.OnClickListener {
     private Message message;

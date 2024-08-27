@@ -1,4 +1,4 @@
-package com.example.orangesale_05;
+package com.example.Chat;
 
 import org.junit.Test;
 

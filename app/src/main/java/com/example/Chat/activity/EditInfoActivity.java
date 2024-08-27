@@ -1,4 +1,4 @@
-package com.example.orangesale_05.activity;
+package com.example.Chat.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.example.orangesale_05.R;
+import com.example.Chat.R;
 
 public class EditInfoActivity extends Activity {
 

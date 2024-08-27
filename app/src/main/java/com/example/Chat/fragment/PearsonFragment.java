@@ -1,4 +1,4 @@
-package com.example.orangesale_05.fragment;
+package com.example.Chat.fragment;
 
 import android.app.Fragment;
 import android.content.Intent;
@@ -17,8 +17,8 @@ import androidx.annotation.Nullable;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
-import com.example.orangesale_05.R;
-import com.example.orangesale_05.activity.EditInfoActivity;  // 这是你新建的编辑信息的Activity
+import com.example.Chat.R;
+import com.example.Chat.activity.EditInfoActivity;  // 这是你新建的编辑信息的Activity
 
 public class PearsonFragment extends Fragment implements View.OnClickListener {
 

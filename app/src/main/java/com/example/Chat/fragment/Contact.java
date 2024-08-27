@@ -1,4 +1,4 @@
-package com.example.orangesale_05.fragment;
+package com.example.Chat.fragment;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.example.orangesale_05.R;
+import com.example.Chat.R;
 
 public class Contact extends Fragment {
     @Nullable
