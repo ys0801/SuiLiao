@@ -17,7 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.lljjcoder.citypickerview.widget.CityPicker;
 import com.example.orangesale_05.R;
-import com.example.orangesale_05.dataoperation.OrangeDatabase;
+import com.example.orangesale_05.dataoperation.Database;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener, RadioGroup.OnCheckedChangeListener {
     private EditText usernameEdit, passwordEdit, surePasswordEdit;
@@ -125,8 +125,8 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                     bundle.putString("sex", sexStr);
                     bundle.putString("city", city);
                     //本节将使用安卓自身带的SQLite数据库的方式存储注册的信息（之前直接传输显示在界面是的方式）
-                    OrangeDatabase orangeDatabase = new OrangeDatabase(RegisterActivity.this);
-                    SQLiteDatabase sqLiteDatabase = orangeDatabase.getWritableDatabase();
+                    Database database = new Database(RegisterActivity.this);
+                    SQLiteDatabase sqLiteDatabase = database.getWritableDatabase();
                     insertData(sqLiteDatabase, bundle);
                     Intent intent = new Intent(RegisterActivity.this, IndexActivity.class);
                     intent.putExtras(bundle);

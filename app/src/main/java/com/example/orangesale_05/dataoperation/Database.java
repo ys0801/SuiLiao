@@ -9,8 +9,8 @@ import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 
-public class OrangeDatabase extends SQLiteOpenHelper {
-    public OrangeDatabase(@Nullable Context context) {
+public class Database extends SQLiteOpenHelper {
+    public Database(@Nullable Context context) {
         super(context, "orange.db3", null, 1);
     }
 

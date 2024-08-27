@@ -12,7 +12,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.orangesale_05.R;
-import com.example.orangesale_05.dataoperation.OrangeDatabase;
+import com.example.orangesale_05.dataoperation.Database;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     private Button registerButton, loginButton;
@@ -38,9 +38,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 if (validateLogin()) {
                     Intent intent1 = new Intent(LoginActivity.this, IndexActivity.class);
                     Bundle bundle = new Bundle();
-                    OrangeDatabase orangeDatabase = new OrangeDatabase(LoginActivity.this);
+                    Database database = new Database(LoginActivity.this);
                     bundle.putString("username", usernameText.getText().toString());
-                    bundle = orangeDatabase.queryUserInfo(orangeDatabase.getReadableDatabase(), bundle);
+                    bundle = database.queryUserInfo(database.getReadableDatabase(), bundle);
                     intent1.putExtras(bundle);
                     startActivity(intent1);
                 } else {
@@ -68,8 +68,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private boolean validateLogin() {
         String username = usernameText.getText().toString();
         String password = paswdEdit.getText().toString();
-        OrangeDatabase orangeDatabase = new OrangeDatabase(LoginActivity.this);
-        SQLiteDatabase sqLiteDatabase = orangeDatabase.getReadableDatabase();
+        Database database = new Database(LoginActivity.this);
+        SQLiteDatabase sqLiteDatabase = database.getReadableDatabase();
         Cursor cursor = sqLiteDatabase.rawQuery("select * from orange_user where username=? and password=?", new String[]{username, password});
         if (cursor.getCount() > 0) {
             return true;

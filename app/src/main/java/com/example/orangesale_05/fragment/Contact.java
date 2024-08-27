@@ -11,11 +11,11 @@ import androidx.annotation.Nullable;
 
 import com.example.orangesale_05.R;
 
-public class wenjian extends Fragment {
+public class Contact extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = LayoutInflater.from(getActivity()).inflate(R.layout.wenjian, container, false);
+        View view = LayoutInflater.from(getActivity()).inflate(R.layout.contact, container, false);
         return view;
     }
 }
