@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.example.Chat.R;
+import Chat.R;
 
 public class Document extends Fragment {
     @Nullable

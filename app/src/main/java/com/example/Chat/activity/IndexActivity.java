@@ -9,7 +9,7 @@ import android.widget.LinearLayout;
 
 import androidx.annotation.Nullable;
 
-import com.example.Chat.R;
+import Chat.R;
 import com.example.Chat.fragment.Contact;
 import com.example.Chat.fragment.Document;
 import com.example.Chat.fragment.Message;

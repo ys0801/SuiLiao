@@ -9,7 +9,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.Chat.R;
+import Chat.R;
 import com.example.Chat.entity.Product;
 
 import java.util.List;

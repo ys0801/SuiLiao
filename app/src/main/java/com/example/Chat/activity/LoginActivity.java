@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.Chat.R;
+import Chat.R;
 import com.example.Chat.dataoperation.Database;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {

@@ -16,7 +16,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.lljjcoder.citypickerview.widget.CityPicker;
-import com.example.Chat.R;
+import Chat.R;
 import com.example.Chat.dataoperation.Database;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener, RadioGroup.OnCheckedChangeListener {

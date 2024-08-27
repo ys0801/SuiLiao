@@ -8,7 +8,7 @@ import android.widget.ListView;
 
 import androidx.annotation.Nullable;
 
-import com.example.Chat.R;
+import Chat.R;
 import com.example.Chat.adapter.Adapter;
 import com.example.Chat.entity.Product;
 import com.example.Chat.fragment.SetDetailFragment;

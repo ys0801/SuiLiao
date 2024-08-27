@@ -17,7 +17,7 @@ import androidx.annotation.Nullable;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
-import com.example.Chat.R;
+import Chat.R;
 import com.example.Chat.activity.EditInfoActivity;  // 这是你新建的编辑信息的Activity
 
 public class PearsonFragment extends Fragment implements View.OnClickListener {

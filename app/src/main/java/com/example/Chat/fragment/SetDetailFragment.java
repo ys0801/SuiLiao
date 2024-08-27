@@ -13,7 +13,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.example.Chat.R;
+import Chat.R;
 import com.example.Chat.activity.CategoryActivity;
 
 import java.util.Objects;

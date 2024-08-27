@@ -12,7 +12,7 @@ import android.widget.SearchView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.example.Chat.R;
+import Chat.R;
 import com.example.Chat.adapter.ProductAdapter;
 import com.example.Chat.entity.Product;
 

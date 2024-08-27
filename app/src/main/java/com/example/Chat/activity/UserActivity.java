@@ -1,5 +1,6 @@
 package com.example.Chat.activity;
 
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +11,7 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
-import com.example.Chat.R;
+import Chat.R;
 
 public class UserActivity extends Activity implements View.OnClickListener {
     private ImageView userIconImage;
