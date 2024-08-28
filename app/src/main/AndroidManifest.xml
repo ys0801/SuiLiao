@@ -25,6 +25,7 @@
         <activity android:name="com.example.Chat.activity.UserActivity" />
         <activity android:name="com.example.Chat.activity.CategoryActivity" />
         <activity android:name="com.example.Chat.activity.IndexActivity" />
+        <activity android:name="com.example.Chat.activity.ChatActivity" />
     </application>
 
 </manifest>
